@@ -13,10 +13,10 @@ export class ListarTarefasComponent implements OnInit {
 
   ngOnInit() {
     this.tarefas = this.listarTodos();
-   this.tarefas = [
+  /* this.tarefas = [
       new Tarefa(1, "Tarefa teste", false),
       new Tarefa(2, "Tarefa teste 1", true)
-    ];
+    ];*/
   }
 
   listarTodos():Tarefa[]{
