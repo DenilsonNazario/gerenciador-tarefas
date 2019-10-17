@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router'; 
 import { ListarTarefasComponent } from './listar';
 import { CadastraTarefaComponent } from './cadastra';
+import { EditTarefaComponent } from './editar';
 
 export const TarefaRoutes: Routes = [
     {
@@ -15,6 +16,10 @@ export const TarefaRoutes: Routes = [
     {
         path: 'tarefas/cadastra',//assosia um path a um componente especifico
         component: CadastraTarefaComponent
+    },
+    {
+        path: 'tarefas/editar/:id',//assosia um path a um componente especifico
+        component: EditTarefaComponent
     }
 
 

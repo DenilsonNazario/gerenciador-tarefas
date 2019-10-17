@@ -5,9 +5,10 @@ import { ListarTarefasComponent } from './listar';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CadastraTarefaComponent } from './cadastra';
+import { EditTarefaComponent } from './editar';
 
 @NgModule({
-  declarations: [ListarTarefasComponent, CadastraTarefaComponent],
+  declarations: [ListarTarefasComponent, CadastraTarefaComponent, EditTarefaComponent],
   imports: [
     CommonModule,
     RouterModule,
