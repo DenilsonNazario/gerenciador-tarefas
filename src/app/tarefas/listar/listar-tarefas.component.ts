@@ -8,7 +8,7 @@ import { Tarefa, TarefaService } from '..';
 })
 export class ListarTarefasComponent implements OnInit {
   tarefas: Tarefa[];
-
+ 
   constructor(private tarefaService: TarefaService) { }
 
   ngOnInit() {
@@ -27,16 +27,19 @@ export class ListarTarefasComponent implements OnInit {
     if(confirm('Deseja remover a tarefa '+tarefa.nome+' ?')){
       this.tarefaService.remover(tarefa.id);
       this.tarefas = this.listarTodos();
-    } 
-
+    
+    }else{
+   
+    }
   }
 
   alterarStatus(tarefa: Tarefa):void{
+    
     if(confirm('Deseja alterar o status da tarefa '+tarefa.nome+' ?')){
       this.tarefaService.alterarStatus(tarefa);
       this.tarefas = this.listarTodos();
     }
-
+    
   }
 
 }
